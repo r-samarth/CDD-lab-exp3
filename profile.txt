@@ -1,0 +1,2 @@
+Feature: User profile
+Details: name and student ID
