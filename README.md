@@ -4,27 +4,21 @@
 
 ## Operations Performed
 
-1. **Branching and merging:** Created `feature/profile`, committed `profile.txt`, and merged the feature into `main`.
-2. **Rebasing:** Created `feature/contact`, added a separate commit on `main`, rebased the feature onto the updated `main`, and merged it.
-3. **Conflict resolution:** Changed the same line in `settings.txt` on `main` and `feature/title`, resolved the conflict, and committed the final version.
+1. **Branching and merging:** Created `feature/profile`, added `profile.txt`, and merged the branch into `main`.
+2. **Rebasing:** Created `feature/contact`, committed a separate update on `main`, rebased the feature onto the updated branch, and merged it.
+3. **Conflict resolution:** Made different changes to the same line of `settings.txt` on `main` and `feature/title`. Resolved the conflict and completed the merge commit.
 
-## Commands Used
+## Key Commands
 
 ```bash
-git switch -c feature/profile
-git add . && git commit -m "Add profile feature"
-git switch main && git merge feature/profile
-
-git switch -c feature/contact
+git switch -c <branch>
+git merge <branch>
 git rebase main
-git switch main && git merge feature/contact
-
-git merge feature/title
-# Edit the conflicted file, then:
-git add settings.txt
-git commit -m "Resolve settings merge conflict"
+git status
+git add <file>
+git commit -m "message"
 ```
 
 ## Result
 
-Branching, merging, rebasing, and merge conflict resolution were performed and verified through the repository history and final file contents.
+All three operations are represented in the repository history. The final `main` branch contains `profile.txt`, `contact.txt`, `status.txt`, and the resolved `settings.txt`.
