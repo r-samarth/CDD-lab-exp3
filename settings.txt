@@ -1,1 +1,1 @@
-Application title: CDD Demo
+Application title: Branching Demo
